@@ -1,0 +1,168 @@
+zhoumiao@ZHOUMIAO:~$ cd flaskweb/flasky
+zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ source venv/bin/activate
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ heroku login
+Enter your Heroku credentials.
+Email: 
+Password (typing will be hidden): 
+Logged in as 
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ rm -rf .git
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ git init
+Initialized empty Git repository in /home/zhoumiao/flaskweb/flasky/.git/
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ heroku git:remote -a zhoumiaoshanghaiset git remote heroku to https://git.heroku.com/zhoumiaoshanghai.git
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ git add .
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ git commit -am "2"
+[master (root-commit) 27d2b31] 2
+ 81 files changed, 3376 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 LICENSE
+ create mode 100644 Procfile
+ create mode 100644 README.md
+ create mode 100644 app/__init__.py
+ create mode 100644 app/api_1_0/__init__.py
+ create mode 100644 app/api_1_0/authentication.py
+ create mode 100644 app/api_1_0/comments.py
+ create mode 100644 app/api_1_0/decorators.py
+ create mode 100644 app/api_1_0/errors.py
+ create mode 100644 app/api_1_0/posts.py
+ create mode 100644 app/api_1_0/users.py
+ create mode 100644 app/auth/__init__.py
+ create mode 100644 app/auth/forms.py
+ create mode 100644 app/auth/views.py
+ create mode 100644 app/decorators.py
+ create mode 100644 app/email.py
+ create mode 100644 app/exceptions.py
+ create mode 100644 app/main/__init__.py
+ create mode 100644 app/main/errors.py
+ create mode 100644 app/main/forms.py
+ create mode 100644 app/main/views.py
+ create mode 100644 app/models.py
+ create mode 100644 app/static/favicon.ico
+ create mode 100644 app/static/styles.css
+ create mode 100644 app/templates/403.html
+ create mode 100644 app/templates/404.html
+ create mode 100644 app/templates/500.html
+ create mode 100644 app/templates/_comments.html
+ create mode 100644 app/templates/_macros.html
+ create mode 100644 app/templates/_posts.html
+ create mode 100644 app/templates/auth/change_email.html
+ create mode 100644 app/templates/auth/change_password.html
+ create mode 100644 app/templates/auth/email/change_email.html
+ create mode 100644 app/templates/auth/email/change_email.txt
+ create mode 100644 app/templates/auth/email/confirm.html
+ create mode 100644 app/templates/auth/email/confirm.txt
+ create mode 100644 app/templates/auth/email/reset_password.html
+ create mode 100644 app/templates/auth/email/reset_password.txt
+ create mode 100644 app/templates/auth/login.html
+ create mode 100644 app/templates/auth/register.html
+ create mode 100644 app/templates/auth/reset_password.html
+ create mode 100644 app/templates/auth/unconfirmed.html
+ create mode 100644 app/templates/base.html
+ create mode 100644 app/templates/edit_post.html
+ create mode 100644 app/templates/edit_profile.html
+ create mode 100644 app/templates/error_page.html
+ create mode 100644 app/templates/followers.html
+ create mode 100644 app/templates/index.html
+ create mode 100644 app/templates/mail/new_user.html
+ create mode 100644 app/templates/mail/new_user.txt
+ create mode 100644 app/templates/moderate.html
+ create mode 100644 app/templates/post.html
+ create mode 100644 app/templates/user.html
+ create mode 100644 config.py
+ create mode 100755 manage.py
+ create mode 100644 migrations/README
+ create mode 100644 migrations/alembic.ini
+ create mode 100644 migrations/env.py
+ create mode 100644 migrations/script.py.mako
+ create mode 100644 migrations/versions/190163627111_account_confirmation.py
+ create mode 100644 migrations/versions/198b0eebcf9_caching_of_avatar_hashes.py
+ create mode 100644 migrations/versions/1b966e7f4b9e_post_model.py
+ create mode 100644 migrations/versions/2356a38169ea_followers.py
+ create mode 100644 migrations/versions/288cd3dc5a8_rich_text_posts.py
+ create mode 100644 migrations/versions/38c4e85512a9_initial_migration.py
+ create mode 100644 migrations/versions/456a945560f6_login_support.py
+ create mode 100644 migrations/versions/51f5ccfba190_comments.py
+ create mode 100644 migrations/versions/56ed7d33de8d_user_roles.py
+ create mode 100644 migrations/versions/d66f086b258_user_information.py
+ create mode 100644 requirements.txt
+ create mode 100644 requirements/common.txt
+ create mode 100644 requirements/dev.txt
+ create mode 100644 requirements/heroku.txt
+ create mode 100644 requirements/prod.txt
+ create mode 100644 tests/__init__.py
+ create mode 100644 tests/test_api.py
+ create mode 100644 tests/test_basics.py
+ create mode 100644 tests/test_client.py
+ create mode 100644 tests/test_selenium.py
+ create mode 100644 tests/test_user_model.py
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ gti push heroku master
+No command 'gti' found, did you mean:
+ Command 'gtf' from package 'xserver-xorg-core' (main)
+ Command 'ti' from package 'ticgit' (universe)
+ Command 'gri' from package 'gri' (universe)
+ Command 'bti' from package 'bti' (universe)
+ Command 'gtg' from package 'gtg' (universe)
+ Command 'gtm' from package 'postgres-xc' (universe)
+ Command 'gtv' from package 'smpeg-gtv' (universe)
+ Command 'gt5' from package 'gt5' (universe)
+ Command 'gt' from package 'genometools' (universe)
+ Command 'gsi' from package 'gambc' (universe)
+ Command 'git' from package 'git' (main)
+gti: command not found
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ git push heroku master
+To https://git.heroku.com/zhoumiaoshanghai.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://git.heroku.com/zhoumiaoshanghai.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ heroku run python manage.py deploy
+Running python manage.py deploy on zhoumiaoshanghai... up, run.9543
+INFO  [alembic.migration] Context impl PostgresqlImpl.
+INFO  [alembic.migration] Will assume transactional DDL.
+INFO  [alembic.migration] Running upgrade None -> 38c4e85512a9, initial migration
+INFO  [alembic.migration] Running upgrade 38c4e85512a9 -> 456a945560f6, login support
+INFO  [alembic.migration] Running upgrade 456a945560f6 -> 190163627111, account confirmation
+INFO  [alembic.migration] Running upgrade 190163627111 -> 56ed7d33de8d, user roles
+INFO  [alembic.migration] Running upgrade 56ed7d33de8d -> d66f086b258, user information
+INFO  [alembic.migration] Running upgrade d66f086b258 -> 198b0eebcf9, caching of avatar hashes
+INFO  [alembic.migration] Running upgrade 198b0eebcf9 -> 1b966e7f4b9e, post model
+INFO  [alembic.migration] Running upgrade 1b966e7f4b9e -> 288cd3dc5a8, rich text posts
+INFO  [alembic.migration] Running upgrade 288cd3dc5a8 -> 2356a38169ea, followers
+INFO  [alembic.migration] Running upgrade 2356a38169ea -> 51f5ccfba190, comments
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ heroku config
+=== zhoumiaoshanghai Config Vars
+DATABASE_URL:                 postgres://xphtfyvmpitqmy:6Fe6T7e4PgH0KgdYoKFF6rLv6N@ec2-54-83-199-54.compute-1.amazonaws.com:5432/du3ilqvrif256
+FLASK_CONFIG:                 heroku
+HEROKU_POSTGRESQL_MAROON_URL: postgres://xphtfyvmpitqmy:6Fe6T7e4PgH0KgdYoKFF6rLv6N@ec2-54-83-199-54.compute-1.amazonaws.com:5432/du3ilqvrif256
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ heroku pg
+=== HEROKU_POSTGRESQL_MAROON_URL, DATABASE_URL
+Plan:        Hobby-dev
+Status:      Available
+Connections: 0/20
+PG Version:  9.4.5
+Created:     2015-11-19 07:53 UTC
+Data Size:   6.7 MB
+Tables:      6
+Rows:        4/10000 (In compliance)
+Fork/Follow: Unsupported
+Rollback:    Unsupported
+Add-on:      postgresql-infinite-3246
+
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ heroku run manage.py migrate
+Running manage.py migrate on zhoumiaoshanghai... up, run.9251
+bash: manage.py: command not found
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ heroku run python manage.py migrate
+Running python manage.py migrate on zhoumiaoshanghai... up, run.9188
+usage: manage.py [-h] {profile,db,runserver,test,shell,deploy} ...
+manage.py: error: invalid choice: 'migrate' (choose from 'profile', 'db', 'runserver', 'test', 'shell', 'deploy')
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ heroku keys:add
+Found an SSH public key at /home/zhoumiao/.ssh/id_rsa.pub
+Would you like to upload it to Heroku? [Yn] Y
+Uploading SSH public key /home/zhoumiao/.ssh/id_rsa.pub... done
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ heroku run python manage.py deploy
+Running python manage.py deploy on zhoumiaoshanghai... up, run.3302
+INFO  [alembic.migration] Context impl PostgresqlImpl.
+INFO  [alembic.migration] Will assume transactional DDL.
+(venv)zhoumiao@ZHOUMIAO:~/flaskweb/flasky$ 
